@@ -2,34 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Moving Companion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <form id="form-container" class="form-container">
-        <label for="street">Street: </label><input type="text" id="street" value="">
-        <label for="city">City: </label><input type="text" id="city" value="">
-        <button id="submit-btn">Submit</button>
-    </form>
+    <div class="container-fluid">
 
-    <hr>
+      <form id="form-container" class="row form-container">
+          <div class="">
+            <label for="street" >Street: </label><input type="text" id="street" value="">
+          </div>
+          <div class="">
+            <label for="city">City: </label><input type="text" id="city" value="">
+          </div>
+          <button id="submit-btn" class="btn btn-primary">Submit</button>
+      </form>
 
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+      <hr>
+
+      <h2 id="greeting" class="greeting">Where do you want to live?</h2>
 
 
-    <div class="wikipedia-container">
-        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="wikipedia-container">
+              <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+              <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="nytimes-container">
+              <h3 id="nytimes-header">New York Times Articles</h3>
+              <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
-    <div class="nytimes-container">
-        <h3 id="nytimes-header">New York Times Articles</h3>
-        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
-    </div>
+
 
     <script src="js/libs/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
